@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TAC-Server</title>
-  <link rel="icon" href="./img/logo." type="image/x-icon">
-  <link href="./output.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./img/logo.png">
+  <link href="./build.css" rel="stylesheet">
 </head>
 <body>
   <!-- 导航栏 -->
@@ -21,7 +21,7 @@
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               <a href="" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a>
-              <a href="./docs.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Docs</a>
+              <a href="https://www.yuque.com/redappleone/tacs" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white after:content-['_↗']">Docs</a>
             </div>
           </div>
         </div>
@@ -52,26 +52,27 @@
 
     </div>      
     </div>
-   <img src="./icon/down-arrow-circle-solid.svg" alt="" class="transition ease-in-out duration-300 size-12 mx-auto mt-4 rounded-full motion-safe:animate-bounce shadow-[0_0px_50px_-12px_#ffffff]">
+   <a href="#more" class="[font-size:0px] select-none">查看更多<img src="./icon/down-arrow-circle-solid.svg" alt="" class="transition ease-in-out duration-300 size-12 mx-auto mt-4 rounded-full motion-safe:animate-bounce shadow-[0_0px_50px_-12px_#ffffff]"></a>
   </section>
   <section class="bg-[#121317]">
-    <p class="text-white text-center text-2xl font-bold pt-6">画廊</p>
+    <p class="text-white text-center text-2xl font-bold pt-6" id="more">画廊</p>
     <div class="w-full grid p-2
                 grid-cols-1 grid-rows-4
                 lg:grid-cols-4 lg:grid-rows-1 lg:p-6
                 sm:grid-cols-1 sm:grid-rows-4 sm:p-4
                 md:grid-cols-2 md:grid-rows-2 md:p-2">
-      <img src="http://i0.hdslb.com/bfs/new_dyn/145fcadeafca6fa79489bf018bf9e2f51546229901.png" alt="" loading="lazy" class="block p-4 rounded-3xl border-transparent">
-      <img src="http://i0.hdslb.com/bfs/new_dyn/7d8c7a7f5a17c55246fb6ef861a843cf1546229901.png" alt="" loading="lazy" class="block p-4 rounded-3xl border-transparent">
-      <img src="http://i0.hdslb.com/bfs/new_dyn/694a48ed2c86788140351036f48d2fb01546229901.png" alt="" loading="lazy" class="block p-4 rounded-3xl border-transparent">
-      <img src="http://i0.hdslb.com/bfs/new_dyn/acaca8e67a7c3bb577d0e03e49511cb51546229901.png" alt="" loading="lazy" class="block p-4 rounded-3xl border-transparent">
+      <img src="./img/picture_1-tuya.webp" alt="" class="block p-4 rounded-3xl border-transparent">
+      <img src="./img/picture_2-tuya.webp" alt="" class="block p-4 rounded-3xl border-transparent">
+      <img src="./img/picture_3-tuya.webp" alt="" class="block p-4 rounded-3xl border-transparent">
+      <img src="./img/picture_4-tuya.webp" alt="" class="block p-4 rounded-3xl border-transparent">
     </div>
-       <div class="w-[40vw] p-8 m-12 block mx-auto bg-[#1a1c23] border-2 border-[#1e2029] rounded-3xl">
+       <div class="w-[80vw] sm:w-[60vw] md:w-[40vw] p-8 m-12 block mx-auto bg-[#1a1c23] border-2 border-[#1e2029] rounded-3xl">
         <h1 class="text-center text-3xl text-white font-bold">加入我们</h1>
         <p class="text-white text-center py-4">服务器采用审核制度 审核通过后方可进入服务器</p>
         <a href="https://qm.qq.com/cgi-bin/qm/qr?k=OsJye_kj4Ym_N5mnqn9RwgqALL1Nrnhl&jump_from=webapi&authKey=8o9NZZ2wpnC7mrZYopJ3YpM1kDkeMM/w7kJuiBcUpIfIXcaQ0uBHzNqv3VvmVho7" target="_blank" rel="noopener norefferrer"
         class="transition ease-out block w-32 bg-blue-600 mx-auto text-center text-white text-lg p-4 py-2 rounded-2xl shadow-[0_0px_6px_-1px_#fff0] hover:shadow-blue-500">进入审核群</a>
     </div>
+
     <footer class="[--footer-height:6] h-[calc(var(--block-size)*var(--footer-height))] xs:[--footer-height:5] sm:[--footer-height:4] md:[--footer-height:3] w-full bg-block-bedrock">
     <div class="flex flex-col sm:flex-row items-center justify-between h-full p-5 bg-dark-75 text-white border-t-2 border-gray-800">
         <header class="flex flex-col gap-3 w-full sm:w-[60%]">
