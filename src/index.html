@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="font-sans">
+<html lang="zh-Hans" class="font-sans">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TAC-Server</title>
   <link rel="icon" type="image/png" href="./img/logo.png">
-  <link href="./build.css" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
 </head>
 <style>
 body,html{
@@ -35,7 +35,7 @@ body,html{
   </nav>
   <!-- 导航栏 -->
    
-  <section class="block bg-gradient-to-br from-[#383838] from-0% to-[#0f0f0f] to-30% p-8 h-screen" id="intro">
+  <section class="block bg-gradient-to-br from-[#383838] from-0% to-[#0f0f0f] to-30% p-8 h-[calc(100svh-4rem)]" id="intro">
     <div class="flex flex-col justify-center items-center h-[70vh]">
       <div 
       class="sm:block hidden transition duration-300 ease-in-out max-h-[65vh] sm:p-8 md:p-12 lg:p-20 lg:rounded-full shadow-xl hover:shadow-2xl hover:shadow-purple-800 hover:-translate-y-1 border-[#292929] rounded-3xl border-2">
@@ -48,7 +48,6 @@ body,html{
           <a href="https://www.yuque.com/redappleone/tacs/vmi78gnv7o98hvbt" target="_blank" rel="noopener norefferrer"
           class="block transition ease-out w-40 text-white border-2 border-[#2d4ccb] text-center p-2 rounded-full text-2xl mx-2 hover:bg-[#1a2a6d] hover:cursor-pointer">查看文档↗</a>
         </div>
-
      </div>
 
       <!-- Mobile -->
@@ -84,8 +83,8 @@ body,html{
         class="transition ease-out block w-32 bg-blue-600 mx-auto text-center text-white text-lg p-4 py-2 rounded-2xl shadow-[0_0px_6px_-1px_#fff0] hover:shadow-blue-500">进入审核群</a>
     </div>
 
-    <footer class="[--footer-height:6] h-[calc(var(--block-size)*var(--footer-height))] xs:[--footer-height:5] sm:[--footer-height:4] md:[--footer-height:3] w-full bg-block-bedrock">
-    <div class="flex flex-col sm:flex-row items-center justify-between h-full p-5 bg-dark-75 text-white border-t-2 border-gray-800">
+    <footer class="[--footer-height:6] h-[calc(var(--block-size)*var(--footer-height))] xs:[--footer-height:5] sm:[--footer-height:4] md:[--footer-height:3] w-full">
+    <div class="flex flex-row items-center justify-between h-full p-5 bg-dark-75 text-white border-t-2 border-gray-800">
         <header class="flex flex-col gap-3 w-full sm:w-[60%]">
             <img src="./img/logo.png" class="size-16" alt="">
             <p class="text-sm"> COPYRIGHT 2022 - 2024 TACS. ALL RIGHTS RESERVED.</p>
@@ -98,7 +97,7 @@ body,html{
         </nav>
     </div>
   </footer>
-
 </section>
+
 </body>
 </html>
