@@ -13,7 +13,7 @@ body,html{scroll-behavior: smooth;}
 </style>
 <body>
   <!-- 导航栏 -->
-  <nav class="bg-gray-800">
+  <nav class="bg-gray-800 z-50">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-12">
       <div class="relative flex h-16 items-center justify-between">
         <div class="flex flex-1 sm:justify-start justify-center items-center">
@@ -25,8 +25,12 @@ body,html{scroll-behavior: smooth;}
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               <a href="" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a>
-              <a href="https://www.yuque.com/redappleone/tacs/vmi78gnv7o98hvbt" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white after:content-['_↗']" target="_blank" rel="noopener norefferrer">Docs</a>
-              <a href="http://online.tacserver.top/status/tacs" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white after:content-['_↗']" target="_blank" rel="noopener norefferrer">Status</a>
+              <a href="https://www.yuque.com/redappleone/tacs/vmi78gnv7o98hvbt" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" target="_blank" rel="noopener norefferrer">Docs
+                <svg class="ml-1 w-4 h-4 fill-current inline" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M9.996 1.532l.008 1 2.779-.022-4.136 4.136.707.707 4.136-4.136-.023 2.779 1 .008.037-4.508-4.508.036z"></path><path d="M12 12H4V4h4.5V3h-5l-.5.5v9l.5.5h9l.5-.5v-5h-1V12z"></path></svg>
+              </a>
+              <a href="http://online.tacserver.top/status/tacs" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white" target="_blank" rel="noopener norefferrer">Status
+                <svg class="ml-1 w-4 h-4 fill-current inline" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M9.996 1.532l.008 1 2.779-.022-4.136 4.136.707.707 4.136-4.136-.023 2.779 1 .008.037-4.508-4.508.036z"></path><path d="M12 12H4V4h4.5V3h-5l-.5.5v9l.5.5h9l.5-.5v-5h-1V12z"></path></svg>
+              </a>
             </div>
           </div>
         </div>
@@ -35,8 +39,8 @@ body,html{scroll-behavior: smooth;}
   </nav>
   <!-- 导航栏 -->
    
-  <section class="block bg-gradient-to-br from-[#383838] from-0% to-[#0f0f0f] to-30% p-8 h-[calc(100svh-4rem)]" id="intro">
-    <div class="flex flex-col justify-center items-center h-[70vh]">
+  <section class="flex items-center justify-center bg-gradient-to-br from-[#383838] from-0% to-[#0f0f0f] to-30% h-[calc(100svh-4rem)] w-screen" id="intro">
+    <div class="flex flex-col justify-center items-center h-[70vh] m-8">
       <div 
       class="sm:block hidden transition duration-300 ease-in-out max-h-[65vh] sm:p-8 md:p-12 lg:p-20 lg:rounded-full shadow-xl hover:shadow-2xl hover:shadow-purple-800 hover:-translate-y-1 border-[#292929] rounded-3xl border-2">
 
@@ -45,27 +49,38 @@ body,html{scroll-behavior: smooth;}
         <div class="flex justify-center items-center">
           <a href="https://qm.qq.com/cgi-bin/qm/qr?k=OsJye_kj4Ym_N5mnqn9RwgqALL1Nrnhl&jump_from=webapi&authKey=8o9NZZ2wpnC7mrZYopJ3YpM1kDkeMM/w7kJuiBcUpIfIXcaQ0uBHzNqv3VvmVho7" target="_blank" 
           class="block transition ease-out w-36 text-white bg-[#2d4ccb] text-center p-2 rounded-full text-2xl border-2 border-transparent mx-2 hover:cursor-pointer hover:border-white" rel="noopener norefferrer">加入我们</a>
+
           <a href="https://www.yuque.com/redappleone/tacs/vmi78gnv7o98hvbt" target="_blank" rel="noopener norefferrer"
-          class="block transition ease-out w-40 text-white border-2 border-[#2d4ccb] text-center p-2 rounded-full text-2xl mx-2 hover:bg-[#1a2a6d] hover:cursor-pointer">查看文档↗</a>
+          class="block transition ease-out w-40 text-white border-2 border-[#2d4ccb] text-center p-2 rounded-full text-2xl mx-2 hover:bg-[#1a2a6d] hover:cursor-pointer">查看文档
+          <svg class="w-6 h-6 fill-current inline" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M9.996 1.532l.008 1 2.779-.022-4.136 4.136.707.707 4.136-4.136-.023 2.779 1 .008.037-4.508-4.508.036z"></path><path d="M12 12H4V4h4.5V3h-5l-.5.5v9l.5.5h9l.5-.5v-5h-1V12z"></path></svg></a>
+
           <a href="http://online.tacserver.top/status/tacs" target="_blank" rel="noopener norefferrer"
-          class="block transition ease-out w-40 text-white border-2 border-[#2d4ccb] text-center p-2 rounded-full text-2xl mx-2 hover:bg-[#1a2a6d] hover:cursor-pointer">在线状态↗</a>
+          class="block transition ease-out w-40 text-white border-2 border-[#2d4ccb] text-center p-2 rounded-full text-2xl mx-2 hover:bg-[#1a2a6d] hover:cursor-pointer">在线状态
+          <svg class="w-6 h-6 fill-current inline" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M9.996 1.532l.008 1 2.779-.022-4.136 4.136.707.707 4.136-4.136-.023 2.779 1 .008.037-4.508-4.508.036z"></path><path d="M12 12H4V4h4.5V3h-5l-.5.5v9l.5.5h9l.5-.5v-5h-1V12z"></path></svg></a>
+
         </div>
+        <a href="#more" class="[font-size:0px] select-none">查看更多<img src="./icon/down-arrow-circle-solid.svg" alt="" class="transition ease-in-out duration-300 size-12 mx-auto mt-4 rounded-full motion-safe:animate-bounce shadow-[0_0px_50px_-12px_#ffffff]"></a>
      </div>
      
       <!-- Mobile -->
       <div
-      class="sm:hidden transition ease-in-out p-8 shadow-xl hover:shadow-2xl rounded-3xl border-[#292929] hover:shadow-purple-800 hover:-translate-y-1 border-2" id="mobile">
+      class="sm:hidden transition ease-in-out hover:shadow-2xl rounded-3xl hover:shadow-purple-800 hover:-translate-y-1" id="mobile">
 
-        <h1 class="text-7xl font-bold text-center text-pretty text-transparent bg-clip-text bg-gradient-to-br from-[#ffdf42] to-[#ff8c09] drop-shadow-2xl">TAC-Server</h1>
+        <h1 class="text-7xl font-extrabold text-center text-pretty text-transparent bg-clip-text bg-gradient-to-br from-[#ffdf42] to-[#ff8c09] drop-shadow-2xl">TAC-Server</h1>
         <h2 class="text-white text-3xl font-thin text-center py-4">生电 建筑 养老 摸鱼 1.20.4<wbr>生电<wbr>服务器</h2>
         <a href="https://qm.qq.com/cgi-bin/qm/qr?k=OsJye_kj4Ym_N5mnqn9RwgqALL1Nrnhl&jump_from=webapi&authKey=8o9NZZ2wpnC7mrZYopJ3YpM1kDkeMM/w7kJuiBcUpIfIXcaQ0uBHzNqv3VvmVho7" target="_blank" rel="noopener norefferrer" class="block transition ease-out w-36 text-white bg-[#2d4ccb] text-center mx-auto p-2 rounded-full text-2xl hover:cursor-pointer my-2 hover:border-white border-2 border-transparent">加入我们</a>
-        <a href="https://www.yuque.com/redappleone/tacs/vmi78gnv7o98hvbt" target="_blank" rel="noopener norefferrer"
-        class="block transition ease-out w-40 text-white border-2 border-[#2d4ccb] text-center p-2 rounded-full text-2xl my-2 hover:bg-[#1a2a6d] hover:cursor-pointer mx-auto">查看文档↗</a>
+
+      <a href="https://www.yuque.com/redappleone/tacs/vmi78gnv7o98hvbt" target="_blank" rel="noopener norefferrer"
+        class="block transition ease-out w-40 text-white border-2 border-[#2d4ccb] text-center p-2 rounded-full text-2xl my-2 hover:bg-[#1a2a6d] hover:cursor-pointer mx-auto">查看文档
+        <svg class="w-6 h-6 fill-current inline" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M9.996 1.532l.008 1 2.779-.022-4.136 4.136.707.707 4.136-4.136-.023 2.779 1 .008.037-4.508-4.508.036z"></path><path d="M12 12H4V4h4.5V3h-5l-.5.5v9l.5.5h9l.5-.5v-5h-1V12z"></path></svg>
+      </a>
+
         <a href="http://online.tacserver.top/status/tacs" target="_blank" rel="noopener norefferrer"
-        class="block transition ease-out w-40 text-white border-2 border-[#2d4ccb] text-center p-2 rounded-full text-2xl my-2 hover:bg-[#1a2a6d] hover:cursor-pointer mx-auto">在线状态↗</a>
+        class="block transition ease-out w-40 text-white border-2 border-[#2d4ccb] text-center p-2 rounded-full text-2xl my-2 hover:bg-[#1a2a6d] hover:cursor-pointer mx-auto">在线状态
+        <svg class="w-6 h-6 fill-current inline" role="presentation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M9.996 1.532l.008 1 2.779-.022-4.136 4.136.707.707 4.136-4.136-.023 2.779 1 .008.037-4.508-4.508.036z"></path><path d="M12 12H4V4h4.5V3h-5l-.5.5v9l.5.5h9l.5-.5v-5h-1V12z"></path></svg></a>
+        <a href="#more" class="[font-size:0px] select-none">查看更多<img src="./icon/down-arrow-circle-solid.svg" alt="" class="transition ease-in-out duration-300 size-12 mx-auto rounded-full motion-safe:animate-bounce shadow-[0_0px_50px_-12px_#ffffff] mb-2"></a>
       </div>      
     </div>
-   <a href="#more" class="[font-size:0px] select-none">查看更多<img src="./icon/down-arrow-circle-solid.svg" alt="" class="transition ease-in-out duration-300 size-12 mx-auto mt-4 rounded-full motion-safe:animate-bounce shadow-[0_0px_50px_-12px_#ffffff]"></a>
   </section>
   <section class="bg-[#121317]">
     <p class="text-white text-center text-2xl font-bold pt-6" id="more">画廊</p>
@@ -101,6 +116,5 @@ body,html{scroll-behavior: smooth;}
     </div>
   </footer>
 </section>
-
 </body>
 </html>
