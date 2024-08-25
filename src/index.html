@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-Hans">
+<html lang="zh-Hans" class="font-systemui">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,19 +10,21 @@
     <title>TAC-Server</title>
     <link rel="icon" type="image/png" href="./img/logo.webp" />
     <link rel="stylesheet" href="./output.css" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn-font.hyperos.mi.com/font/css?family=MiSans_VF:VF:Chinese_Simplify,Latin&amp;display=swap"
       as="style"
-    />
+    /> -->
     <style>
       body,
       html {
         scroll-behavior: smooth;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
       }
-      * {
+      /* * {
         font-family: "MiSans VF", MiSans, system-ui, sans-serif;
-      }
+      } */
     </style>
   </head>
   <body>
@@ -300,7 +302,7 @@
         <a
           href="https://www.123pan.com/s/O3CyVv-q8bLH"
           rel="noopener norefferrer"
-          class="inline text-white opacity-40 text-lg mx-auto hover:underline"
+          class="inline text-white text-lg mx-auto hover:underline"
           target="_blank"
           >下载原图</a
         >

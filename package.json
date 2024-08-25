@@ -7,6 +7,6 @@
     "tailwindcss": "^3.4.9"
   },
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch --minify"
   }
 }
